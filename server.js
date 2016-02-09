@@ -26,8 +26,6 @@ router.route('/tuner')
 		var resLevel = req.body.resLevel;
 		var pitchTranspose = req.body.pitchTranspose;
 		var brand = req.body.brand;
-		console.log(drumSizes);
-		console.log(brand);
 		var tuningResult = createTuning(drumSizes, topHigher, resLevel , pitchTranspose , brand );
 		res.json({ message: tuningResult });
 	});
